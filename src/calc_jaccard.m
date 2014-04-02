@@ -1,7 +1,10 @@
-function j = calc_jaccard(a, b)
-% j = calc_jaccard(a,b)
+function s = calc_jaccard(a, b)
+% s = calc_jaccard(a,b)
+%  a: subset 1
+%  b: subset 2
+%  s: jaccard index
 % 
 % Calculate the Jaccard stability index
 %
 % By: Gregory Ditzler
-j = numel(intersect(a,b))/numel(union(a,b));
+s = numel(intersect(a,b))/numel(union(a,b));

@@ -1,5 +1,9 @@
-function l = calc_kuncheva(a,b,K)
-% l = calc_kuncheva(a,b,K)
+function s = calc_kuncheva(a,b,K)
+% s = calc_kuncheva(a,b,K)
+%   a: subset 1 (of size k)
+%   b: subset 2 (of size k)
+%   K: feature set size
+%   s: kuncheva's stability index
 % 
 % Calculate the Kuncheva's stability index
 %
@@ -12,4 +16,4 @@ else
   k = al;
 end
 r = numel(intersect(a,b));
-l = (r*K-k^2)/(k*(K-k))
+s = (r*K-k^2)/(k*(K-k))
